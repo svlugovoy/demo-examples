@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "55a8dad7-0fb7-4b65-942b-89627e4598ef",
+		"name": "sorting-demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/api/v1/employees/unsorted",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/employees/unsorted",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"employees",
+						"unsorted"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/employees/sorted_first_name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/employees/sorted_first_name",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"employees",
+						"sorted_first_name"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/employees/sorted_last_first_name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/employees/sorted_last_first_name",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"employees",
+						"sorted_last_first_name"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/employees/sorted",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/employees/sorted?col=salary&dir=desc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"employees",
+						"sorted"
+					],
+					"query": [
+						{
+							"key": "col",
+							"value": "salary"
+						},
+						{
+							"key": "dir",
+							"value": "desc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/employees/sorted_salary_range",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/employees/sorted_salary_range?min=2500&max=4500&col=firstName&dir=asc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"employees",
+						"sorted_salary_range"
+					],
+					"query": [
+						{
+							"key": "min",
+							"value": "2500"
+						},
+						{
+							"key": "max",
+							"value": "4500"
+						},
+						{
+							"key": "col",
+							"value": "firstName"
+						},
+						{
+							"key": "dir",
+							"value": "asc"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

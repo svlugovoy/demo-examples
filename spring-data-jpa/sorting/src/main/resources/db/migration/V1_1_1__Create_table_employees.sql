@@ -1,0 +1,7 @@
+CREATE TABLE employees (
+ id BIGINT IDENTITY PRIMARY KEY NOT NULL,
+ first_name VARCHAR(20) NOT NULL,
+ last_name VARCHAR(20) NOT NULL,
+ age INT NOT NULL,
+ salary DECIMAL(20,2) NOT NULL
+);
